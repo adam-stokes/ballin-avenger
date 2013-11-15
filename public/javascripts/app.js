@@ -5,8 +5,10 @@ var cbc = angular.module('cbc', [
     'cbcControllers'
 ]);
 
-cbc.config(['$routeProvider',
-  function($routeProvider) {
+cbc.config(
+  function($routeProvider, $locationProvider) {
+    $locationProvider.html5Mode(false);
+    $locationProvider.hashPrefix('!');
     $routeProvider.
     when('/', {
         templateUrl: 'partials/index',
@@ -15,4 +17,4 @@ cbc.config(['$routeProvider',
     otherwise({
         redirectTo: '/'
     });
-}]);
+});

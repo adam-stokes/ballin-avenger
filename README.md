@@ -1,4 +1,3 @@
-ballin-avenger
-==============
+# ballin-avenger
 
-social network powered by cage-cmf
+nodejs, expressjs, angularjs, social network for custom built chiks.

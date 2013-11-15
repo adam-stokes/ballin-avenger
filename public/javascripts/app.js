@@ -6,15 +6,24 @@ var cbc = angular.module('cbc', [
 ]);
 
 cbc.config(
-  function($routeProvider, $locationProvider) {
-    $locationProvider.html5Mode(false);
-    $locationProvider.hashPrefix('!');
-    $routeProvider.
-    when('/', {
-        templateUrl: 'partials/index',
-        controller: 'IndexCtrl'
-    }).
-    otherwise({
-        redirectTo: '/'
-    });
-});
+    function($routeProvider, $locationProvider) {
+        $locationProvider.html5Mode(true);
+        //$locationProvider.hashPrefix('!');
+        $routeProvider.
+        when('/', {
+            templateUrl: 'partials/index',
+            controller: 'IndexCtrl'
+        }).
+        when('/activity', {
+	    redirectTo: '/'
+        }).
+
+        when('/discuss', {
+            templateUrl: 'partials/discuss',
+            controller: 'DiscussCtrl'
+        }).
+        otherwise({
+            redirectTo: '/'
+        });
+    }
+);

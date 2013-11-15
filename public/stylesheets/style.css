@@ -1,7 +1,26 @@
 body {
-  padding: 1%;
-  font: 12px "Droid Sans", Arial, sans-serif;
+  padding: 0;
+  margin: 0;
+  font: 12px "Droid Sans", "Ubuntu", sans-serif;
 }
 a {
   color: #00b7ff;
+}
+#left-portal-pane {
+  float: left;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 150px;
+  background-color: #87d0c9;
+  border: 1px dotted #000;
+}
+#right-portal-pane {
+  float: left;
+  top: 0;
+  left: 151px;
+  padding: 2%;
+  position: absolute;
+  border: 1px dotted #000;
 }

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html ng-app="cbc">
   <head>
-    <title>custom built chiks</title>
+    <title>Custom Built Chiks</title>
     <link rel='stylesheet' href='/stylesheets/style.css' />
     <script src="javascripts/lib/jquery/jquery-1.10.2.min.js"></script>
     <script src="javascripts/lib/angular/angular.js"></script>
@@ -13,10 +13,17 @@
     <script src="javascripts/controllers.js"></script>
   </head>
   <body>
-    <h1>Activity Stream</h1>
-    <div class="view-container">
-      <div ng-view class="view-frame"></div>
+    <div id="left-portal-pane">
+      <ul>
+	<li><a ng-href="actvity">Chik Life</a></li>
+	<li><a ng-href="discuss">Discuss</a></li>
+	<li><a ng-href="events">Events</a></li>
+      </ul>
     </div>
-    
+    <div id="right-portal-pane">
+      <div class="view-container">
+	<div ng-view class="view-frame"></div>
+      </div>
+    </div>
   </body>
 </html>

@@ -1,7 +1,8 @@
-<p>The activity stream</p>
-<div class="activity-update">
-  
+<h1>Chik Life</h1>
+<div class="bar">
+  <input type="text" placeholder="What's on your mind?" /><button>Post</button>
 </div>
+
 <div ng-repeat="act in activity track by $id(act)">
   {{act.status}}
 </div>

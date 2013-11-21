@@ -1,3 +1,3 @@
 # ballin-avenger
 
-nodejs, expressjs, angularjs, social network for custom built chiks.
+nodejs, expressjs, angularjs, frontend to cage-cmf
